@@ -110,15 +110,31 @@ crossorigin=""/>
           <span>Dashboard</span>
         </a>
       </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Pages</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+          <h6 class="dropdown-header">Login Screens:</h6>
+          <a class="dropdown-item" href="login.html">Login</a>
+          <a class="dropdown-item" href="register.html">Register</a>
+          <a class="dropdown-item" href="forgot-password.html">Forgot Password</a>
+          <div class="dropdown-divider"></div>
+          <h6 class="dropdown-header">Other Pages:</h6>
+          <a class="dropdown-item" href="404.html">404 Page</a>
+          <a class="dropdown-item" href="blank.html">Blank Page</a>
+        </div>
+      </li>
       <li class="nav-item">
         <a class="nav-link" href="District-level.html">
           <i class="fas fa-fw fa-chart-area"></i>
-          <span>District Level</span></a>
+          <span>Charts</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="National-level.html">
+        <a class="nav-link" href="tables.html">
           <i class="fas fa-fw fa-table"></i>
-          <span>National Level</span></a>
+          <span>Tables</span></a>
       </li>
     </ul>
 
@@ -127,7 +143,7 @@ crossorigin=""/>
         <div class="row">
             <div class="col-md-4"> <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title" style=" text-align: center;">school details</h5>
+                    <h5 class="card-title">school details</h5>
                   <div class="schooldetails">
                     <ul>
                       <li>Name of School</li>
@@ -145,7 +161,7 @@ crossorigin=""/>
             </div>
             <div class="col-md-8"> <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title" style=" text-align: center;">map of uganda</h5>
+                    <h5 class="card-title">map of uganda</h5>
                     <div id="mapid"></div>
                 </div>
               </div>
@@ -155,7 +171,7 @@ crossorigin=""/>
           <div class="row">
               <div class="col-md-6"> <div class="card">
                   <div class="card-body">
-                      <h5 class="card-title"  style="background-color: #000080;text-align: center;color:#FFFFFF">enrolment</h5>
+                      <h5 class="card-title">enrolment</h5>
                       <div class="maps">
                         <canvas id="myChart"></canvas>
                     </div>
@@ -164,7 +180,7 @@ crossorigin=""/>
               </div>
               <div class="col-md-6"> <div class="card">
                   <div class="card-body">
-                      <h5 class="card-title"  style="background-color: #000080; text-align: center;color:#FFFFFF">attendence</h5>
+                      <h5 class="card-title">attendence</h5>
                       <div class="maps">
                           <canvas id="chart"></canvas>
                       </div>
@@ -177,7 +193,7 @@ crossorigin=""/>
         <div class="col">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title"  style="background-color: #000080; text-align: center;color:#FFFFFF">Teacher-pupil ratio</h5>
+                    <h5 class="card-title">Teacher-pupil ratio</h5>
                     <div id="canvas-holder" style="width:60%">
                         <canvas id="chart-area" width="100" height="100;"></canvas>
                     </div>
@@ -187,7 +203,7 @@ crossorigin=""/>
         <div class="col">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title"  style="background-color: #000080; text-align: center;color:#FFFFFF">Teacher-pupil ratio</h5>
+                    <h5 class="card-title">Teacher-pupil ratio</h5>
                     <div id="canvas-holder" style="width:60%">
                         <canvas id="nasted2" width="100" height="100;"></canvas>
                     </div>
@@ -197,7 +213,7 @@ crossorigin=""/>
         <div class="col">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title"  style="background-color: #000080; text-align: center;color:#FFFFFF">Classroom-pupil ratio</h5>
+                    <h5 class="card-title">Classroom-pupil ratio</h5>
                     <div id="canvas-holder" style="width:60%">
                         <canvas id="nasted3" width="100" height="100;"></canvas>
                     </div>
@@ -210,7 +226,7 @@ crossorigin=""/>
       <div class="row">
           <div class="col-md-6"> <div class="card">
               <div class="card-body">
-                  <h5 class="card-title"  style="background-color: #000080; text-align: center;color:#FFFFFF">Pillars</h5>
+                  <h5 class="card-title">Pillars</h5>
                   <form action="/action_page.php">
                     <select name="cars">
                       <option value="Pillar1">Pillar1:Learning Environment</option>
@@ -229,7 +245,7 @@ crossorigin=""/>
           </div>
           <div class="col-md-6"> <div class="card">
               <div class="card-body">
-                  <h5 class="card-title"  style="background-color: #000080; text-align: center;color:#FFFFFF">Trend</h5>
+                  <h5 class="card-title">Trend</h5>
                    <div id="linegraph">
                   <canvas id="line-chart"></canvas>
                   </div>
@@ -323,7 +339,7 @@ crossorigin=""/>
 
   <!-- Demo scripts for this page-->
   <script src="js/demo/datatables-demo.js"></script>
-  <!-- <script src="js/demo/chart-area-demo.js"></script> -->
+  <script src="js/demo/chart-area-demo.js"></script>
   <script src="js/demo/chart-line-demo.js"></script>
   <script src="js/demo/chart-pillars-demo.js"></script>
 
